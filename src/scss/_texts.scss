@@ -1,0 +1,101 @@
+$tag-size: 24px;
+
+.h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.h1::before {
+  content: "\003Ch1\003E\00000a\f105\f105\f105"; //\f105\0009
+  white-space: pre-line;
+  font-family: acme;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: $tag-size;
+  line-height: 0%;
+  color: rgba($color: #ffffff, $alpha: 0.3);
+}
+
+.h1::after {
+  content: "\003C\2215h1\003E";
+  display: block;
+  font-family: acme;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: $tag-size;
+  color: rgba($color: #ffffff, $alpha: 0.3);
+}
+
+.texts {
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: josefinSans;
+  font-size: 20px;
+
+  p {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+}
+
+.body {
+  margin: 8px;
+}
+
+.body::before {
+  content: "\003C body\003E";
+  font-family: acme;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: $tag-size;
+  color: rgba($color: #ffffff, $alpha: 0.3);
+}
+
+.body::after {
+  content: "\003C\2215 body\003E";
+  display: block;
+  font-family: acme;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: $tag-size;
+  color: rgba($color: #ffffff, $alpha: 0.3);
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+  outline: none;
+}
+
+textarea, input[type=text], input[type=button], input[type=submit], input[type=reset] {
+  border: 2px solid transparent;
+  color: white;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 100%;
+  margin: 4px 2px;
+  background-color: rgba($color: #ffffff, $alpha: 0.3);
+  font-size: 16px;
+}
+
+
+textarea:focus, input:focus {
+  border: 2px solid $button-color;
+  outline: none;
+}
+
+form {
+  padding: 1em;
+}
+
+.contact button {
+  float: right;
+  border-radius: 4px;
+}
+
+.skills a {
+  text-decoration: none;
+  color: $button-color;
+}

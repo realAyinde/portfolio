@@ -1,0 +1,122 @@
+.social {
+  position: fixed;
+  right: 77px;
+  bottom: 40px;
+  min-width: 53px;
+  overflow: hidden;
+  height: 53px;
+  line-height: 50px;
+
+  .float-social {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    font-size: xx-large;
+    background-color: $button-color;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 50px;
+    transition-timing-function: linear;
+    z-index: +3;
+  }
+
+  .clicked {
+
+  }
+
+  .social-panel {
+    position: relative;
+    float: right;
+    transform: translateY(20%);
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 4px;
+    box-shadow: 12px 4px 8px 0 rgba(223, 188, 188, 0.1);
+    width: fit-content;
+    min-width: 60px;
+    overflow: auto;
+    text-align: justify;
+    display: none;
+
+    a {
+      float: left;
+      flex: 1;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      width: 2.5em;
+      color: white;
+      text-decoration: none;
+      border-right: 2px solid $button-color;
+    }
+
+    a:last-child {
+      padding-right: 10px;
+    }
+
+    a:hover {
+      color: $button-color;
+    }
+  }
+}
+
+// @media {$tablets} {
+@media screen and (min-width: 531px) and (max-width: 960px) {
+  .social {
+    display: none;
+  }
+
+  .social-panel {
+    position: fixed;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
+    line-height: 40px;
+    background-color: black;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px 0 rgba(223, 188, 188, 0.1);
+    width: 40px;
+    overflow: auto;
+    text-align: center;
+
+    a {
+      float: left;
+      display: block;
+      text-align: center;
+      height: 40px;
+      line-height: 40px;
+      width: 100%;
+      color: white;
+      text-decoration: none;
+      border-bottom: 2px solid $button-color;
+    }
+
+    a:first-child {
+      border-top: 2px solid $button-color;
+    }
+
+    a:hover {
+      color: $button-color;
+    }
+  }
+}
+
+@media screen and (min-width: 961px) {
+  .social-panel {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .social-panel {
+    display: none;
+  }
+}

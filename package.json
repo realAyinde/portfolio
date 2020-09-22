@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio webapp",
+  "main": "index.js",
+  "scripts": {
+    "clean:dev": "rimraf ./development && rimraf ./.cache",
+    "clean:build": "rimraf dist/*",
+    "clean": "npm run clean:dev && npm run clean:build",
+    "start": "parcel src/index.html --out-dir development -p 1000",
+    "dev": "npm run clean:dev && parcel src/index.html --out-dir development -p 1000 --open",
+    "build": "parcel build src/*.html --out-dir dist --src-url ./"
+  },
+  "keywords": [],
+  "author": "Ayinde Sodiq",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0"
+  }
+}

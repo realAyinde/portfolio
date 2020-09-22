@@ -1,0 +1,90 @@
+$primary-color: rgb(128,128,128);
+$body-bg-color: #1a1212;
+$secondary-color: rgb(169,169,169);
+$tertiary-color: rgb(245,245,245);
+$button-color: rgb(255, 140, 0);
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: acme;
+  src: url(../fonts/Acme-Regular.ttf);
+}
+
+@font-face {
+  font-family: josefinSans;
+  src: url(../fonts/JosefinSans-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: josefinSans;
+  src: url(../fonts/JosefinSans-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: josefinSans;
+  src: url(../fonts/JosefinSans-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: josefinSans;
+  src: url(../fonts/JosefinSans-Thin.ttf);
+  font-style: thin;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: $body-bg-color;
+  color: #fff;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  height: 100vh;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  text-decoration: none;
+  color: $button-color;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.3em;
+  text-align: center;
+  border: 2px solid $button-color;
+}
+
+button:hover {
+  color: $primary-color;
+  background: $button-color;
+}
+
+@import 'grid';
+@import 'header';
+@import 'texts';
+@import 'social';

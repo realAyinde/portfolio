@@ -1,0 +1,144 @@
+@media screen and (min-width: 769px) {
+  header {
+    padding: 0%;
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    width: 50px;
+    overflow: hidden;
+    background: linear-gradient(-90deg, black, black);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1);
+
+    .nav-mobile {
+      display: none;
+    }
+
+    img.logo {
+      position: fixed;
+      top: 0;
+      width: 50px;
+      height: 50px;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    .navbar {
+      position: relative;
+      top: 50%;
+      height: fit-content;
+      width: 100%;
+      transform: translateY(-50%);
+      overflow: auto;
+    }
+    .navbar a {
+      text-align: center;
+      float: left;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+    }
+
+    .navbar a:hover {
+      color: $button-color;
+    }
+
+    .navbar .active {
+      color: $button-color;
+      border-top: 1px solid $button-color;
+      border-bottom: 1px solid $button-color;
+      border-right: 0px solid $button-color;
+      border-left: 0px solid $button-color;
+      border-style: dashed;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    margin-bottom: 1.5em;
+    background: linear-gradient(-90deg, black, black);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1);
+    height: 50px;
+
+    .navbar {
+      display: none;
+    }
+
+    .menu-icon {
+      display: inline-block;
+      position: fixed;
+      text-align: center;
+      right: 12px;
+      top: 12px;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      transition: 0.7s;
+    }
+
+    .clicked {
+      transform: rotateZ(90deg);
+    }
+
+    img.logo {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.nav-panel {
+  position: absolute;
+  top: 50px;
+  height: 40px;
+  background: linear-gradient(-90deg, black, black);
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1);
+  width: 100%;
+  overflow: hidden;
+  text-align: justify;
+  display: none;
+  transition-timing-function: linear;
+  z-index: +1;
+
+  a {
+    float: left;
+    flex: 1;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: auto;
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $button-color;
+  }
+
+  .active {
+    color: $button-color;
+    font-size: xx-small;
+  }
+}
+
+@keyframes move {
+  0% {
+    display: flex;
+    left: 100%;}
+  100% {
+    display: flex;
+    left: 0%;}
+}
