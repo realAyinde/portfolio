@@ -41,6 +41,7 @@ $tag-size: 24px;
 
 .body {
   margin: 8px;
+  min-height: 100%;
 }
 
 .body::before {
@@ -98,4 +99,35 @@ form {
 .skills a {
   text-decoration: none;
   color: $button-color;
+}
+
+.home {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+// .display-pic {
+//   padding: auto;
+//   margin: auto;
+// }
+
+img.my-pic {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
+.pic-texts {
+  padding-top: 0.5em;
+  text-align: center;
+  font-family: josefinSans;
+  // text-shadow: 1px 1px grey;
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .title {
+    font-size: 14px;
+  }
 }

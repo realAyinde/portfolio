@@ -25,7 +25,13 @@ const about = `
             </div>
           </div>
           <div class="col-12 col-lg-6">
-
+            <div class="display-pic">
+              <img src="./assets/my_pic.jpg" id="my-pic" class="my-pic"/>
+              <div class="pic-texts">
+                <p class="name">AYINDE Sodiq</p>
+                <p class="title">Freelance Software Engineer</p>
+              </div>
+            </div>
           </div>
         </div>
   `;

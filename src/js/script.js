@@ -1,30 +1,79 @@
-// var nav = document.getElementById("navbar")
-// var mobile = document.getElementById("mobile-nav"),
-//   nav2 = mobile.getElementsByClassName("nav-panel")[0]
+var mobileNav = document.getElementById("mobile-nav"),
+  panel = mobileNav.getElementsByClassName("nav-panel")[0]
 
 
-// window.onpopstate = () => {
-//   make_active(nav)
-//   make_active(nav2)
-// }
+document.getElementById("show-panel").addEventListener("click", showPanel);
+document.getElementById("open-social").addEventListener("click", showSocial);
 
-// function make_active(nav) {
-//   var anchor = nav.getElementsByTagName('a')
-//   var current = window.location.pathname.split('/')[1].split('#')[0];
-//   for (let i = 0; i < anchor.length; i++) {
-//     const element = anchor[i];
-//     if (element.id.split("to")[1].toLowerCase() == current) {
-//       element.className = "active";
-//       if (element.hasAttribute('name')) {
-//         var name = element.getAttribute("name")
-//         element.innerText = name.toUpperCase()
-//       }
-//     } else {
-//       element.classList.remove('active')
-//       if (element.hasAttribute('name')) {
-//         var icon = element.getAttribute("icon")
-//         element.innerHTML = '<i class="fas ' + icon + ' fa-lg"></i>'
-//       }
-//     }
-//   }
-// }
+
+//function showing menu-panel
+function showPanel() {
+  this.classList.toggle("clicked")
+
+  if (!panel.style.display) {
+    panel.style.display = "none"
+  }
+
+  (panel.style.display === "none") ? slideIn(panel) : slideOut(panel);
+}
+
+// Showing my social icons function
+function showSocial() {
+  var socialPanel = document.getElementById("social-panel")
+
+  var iconRight = document.createElement("I")
+  iconRight.classList.add("fas", "fa-angle-right")
+
+  var iconLeft = document.createElement("I")
+  iconLeft.classList.add("fas", "fa-angle-left")
+
+  this.classList.toggle("clicked")
+
+  while (this.hasChildNodes()) {
+    this.removeChild(this.childNodes[0])
+  }
+
+  !this.classList.contains("clicked") ? this.appendChild(iconLeft) : this.appendChild(iconRight);
+
+  if (!socialPanel.style.display) {
+    socialPanel.style.display = "none"
+  }
+
+  (socialPanel.style.display === "none") ? slideIn(socialPanel) : slideOut(socialPanel);
+}
+
+// Slide-in function
+function slideIn(panel) {
+  panel.style.display = "flex";
+  if (!panel.style.left) {
+    panel.style.left = "100%"
+  }
+  var slideEffect = setInterval(() => {
+    if (parseFloat(panel.style.left) > 0) {
+      panel.style.left = parseFloat(panel.style.left) - 1 + "%"
+    } else {
+      clearInterval(slideEffect)
+      panel.style.display = "flex";
+    }
+  }, 1);
+}
+
+// Slide-out function
+function slideOut(panel) {
+  panel.style.display = "flex";
+  panel.style.left = "0%"
+  var slideEffect = setInterval(() => {
+    if (parseFloat(panel.style.left) < 100) {
+      panel.style.left = parseFloat(panel.style.left) + 1 + "%"
+    } else {
+      clearInterval(slideEffect)
+      panel.style.display = "none";
+    }
+  }, 1);
+}
+
+
+// import * as url from '../assets/pic.png'
+// import * as svgurl from '../assets/editedayinde.svg'
+// document.getElementById("my-pic").src = url.default
+// document.getElementById("ayinde-svg").src = svgurl.default

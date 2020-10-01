@@ -39,6 +39,11 @@ window.onpopstate = () => {
   make_active(nav2)
 }
 
+window.onload = () => {
+  make_active(nav)
+  make_active(nav2)
+}
+
 const routing = ['home', 'about', 'contact', 'skills', 'work']
 routing.forEach(href => {
   var routes = Array.from(document.querySelectorAll(`[to="${href}"]`))
@@ -57,10 +62,9 @@ routing.forEach(href => {
 function make_active(nav) {
   var anchor = nav.getElementsByTagName('a')
   var current = window.location.pathname.split('/')[1].split('#')[0];
-  console.log(typeof (current))
   for (let i = 0; i < anchor.length; i++) {
     const element = anchor[i];
-    if (element.getAttribute("to")==current || (element.getAttribute("to")=='home' && current=='')) {
+    if (element.getAttribute("to") == current || (element.getAttribute("to") == 'home' && current == '')) {
       element.className = "active";
       if (element.hasAttribute('name')) {
         var name = element.getAttribute("name")
@@ -84,4 +88,10 @@ function remove_hash_from_url(params) {
     var clean_url = url.substring(0, url.indexOf("#"))
     window.history.replaceState({}, document.title, clean_url)
   }
+}
+
+var setDefaultActive = function (params) {
+  var path = window.location.pathname
+  var element = window.location.pathname.split('/')[1].split('#')[0];
+  element.addClass("active")
 }
