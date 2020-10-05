@@ -4,11 +4,13 @@ $tag-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   font-weight: bold;
+  margin-left: 16px;
 }
 
 .h1::before {
-  content: "\003Ch1\003E\00000a\f105\f105\f105"; //\f105\0009
+  content: "\003Ch1\003E\00000a"; //\f105\0009
   white-space: pre-line;
+  margin-left: -16px;
   font-family: acme;
   font-weight: lighter;
   font-style: italic;
@@ -19,6 +21,7 @@ $tag-size: 24px;
 
 .h1::after {
   content: "\003C\2215h1\003E";
+  margin-left: -16px;
   display: block;
   font-family: acme;
   font-weight: lighter;

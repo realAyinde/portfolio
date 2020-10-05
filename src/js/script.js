@@ -74,6 +74,6 @@ function slideOut(panel) {
 
 
 // import * as url from '../assets/pic.png'
-// import * as svgurl from '../assets/editedayinde.svg'
+import * as svgurl from '../assets/svgs/editedayinde.svg'
 // document.getElementById("my-pic").src = url.default
-// document.getElementById("ayinde-svg").src = svgurl.default
+document.getElementById("svg1").data = svgurl.default
