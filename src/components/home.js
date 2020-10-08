@@ -3,24 +3,62 @@ const home = `
   <div class="row">
     <div class="col-12 col-lg-6">
       <div class="home">
-        <h1 aria-label="
-          Hi Buddy!,
-          I’m yinde,
-          Software Engineer."
-          class="h1 blast-root">
-          <span class="blast" aria-hidden="true" style="opacity: 1;">H</span><span class="blast" aria-hidden="true" style="opacity: 1;">i</span>
-          <span class="blast" aria-hidden="true" style="opacity: 1;">B</span><span class="blast" aria-hidden="true" style="opacity: 1;">u</span><span class="blast" aria-hidden="true" style="opacity: 1;">d</span><span class="blast" aria-hidden="true" style="opacity: 1;">d</span><span class="blast" aria-hidden="true" style="opacity: 1;">y</span><span class="blast" aria-hidden="true" style="opacity: 1;">!</span><br>
-          <span class="blast" aria-hidden="true" style="opacity: 1;">I</span><span class="blast" aria-hidden="true" style="opacity: 1;">’</span><span class="blast" aria-hidden="true" style="opacity: 1;">m</span> <img src="" alt="A" ><span class="blast" aria-hidden="true" style="opacity: 1;">y</span><span class="blast" aria-hidden="true" style="opacity: 1;">i</span><span class="blast" aria-hidden="true" style="opacity: 1;">n</span><span class="blast" aria-hidden="true" style="opacity: 1;">d</span><span class="blast" aria-hidden="true" style="opacity: 1;">e</span><span class="blast" aria-hidden="true" style="opacity: 1;">,</span><br>
-          <span class="blast" aria-hidden="true" style="opacity: 1;">S</span><span class="blast" aria-hidden="true" style="opacity: 1;">o</span><span class="blast" aria-hidden="true" style="opacity: 1;">f</span><span class="blast" aria-hidden="true" style="opacity: 1;">t</span><span class="blast" aria-hidden="true" style="opacity: 1;">w</span><span class="blast" aria-hidden="true" style="opacity: 1;">a</span><span class="blast" aria-hidden="true" style="opacity: 1;">r</span><span class="blast" aria-hidden="true" style="opacity: 1;">e</span>
-          <span class="blast" aria-hidden="true" style="opacity: 1;">E</span><span class="blast" aria-hidden="true" style="opacity: 1;">n</span><span class="blast" aria-hidden="true" style="opacity: 1;">g</span><span class="blast" aria-hidden="true" style="opacity: 1;">i</span><span class="blast" aria-hidden="true" style="opacity: 1;">n</span><span class="blast" aria-hidden="true" style="opacity: 1;">e</span><span class="blast" aria-hidden="true" style="opacity: 1;">e</span><span class="blast" aria-hidden="true" style="opacity: 1;">r</span>
-        </h1>
+        <div class="h1">
+          <p>Hi Buddy!, I’m</p>
+          <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488.43 163.6" width="400">
+          <g id="ayinde">
+            <path
+              d="M49,128.63a140.44,140.44,0,0,1-15.31.92,38.63,38.63,0,0,1-23.22-7.19Q.5,115.17.5,98.58c0-10.33,3-17.7,9-22.12s13.74-7.38,23-8.85c2.49,0,5.9-1,10.32-1.48,10.79-1.47,16.23-4.7,16.23-9.59,0-3.68-1.94-6.08-5.72-7.19A37.77,37.77,0,0,0,42.9,47.7c-6.91,0-12.63,1.56-15.12,7H3.08A28.39,28.39,0,0,1,13.41,35.9C20,30.27,29.54,27.42,41.8,27.42c13.73,0,24,2.3,31,7,7.1,4.89,10.69,11.8,10.69,20.65V88.62c0,9.87-1.75,17.52-5.35,23a33.29,33.29,0,0,1-12.72,12A46.61,46.61,0,0,1,49,128.63ZM59.49,78.3a66.27,66.27,0,0,1-14.38,4.79c-5.62,1.2-8.48,1.85-8.48,1.85-4.42,1.19-7.65,2.85-9.58,4.79a14.76,14.76,0,0,0-2.58,8.11,12,12,0,0,0,3.31,8.85c2.22,1.94,5.44,3,9.59,3,6.91,0,12.26-1.94,16.22-5.9s5.9-9.31,5.9-16.22Z"
+            />
+            <path
+              d="M101.16,142.09h7c4.89,0,8.76-1.2,11.62-3.51s3.41-6.08,1.66-11.24L87.15,29.63h28.39L135.45,99l17.33-60.47c1.47-5.9,5.44-8.85,11.8-8.85h17.69l-37.6,111.72c-2.95,8.11-6.64,13.92-11.07,17.33-4.42,2.95-11.7,4.42-21.75,4.42h-5.16a22.89,22.89,0,0,0-5.53-.73Z"
+            />
+            <path
+              d="M188.91.87h13.27A12.05,12.05,0,0,1,211,4.56a12,12,0,0,1,3.69,8.84v7.75H188.91Zm0,28.76h13.27a12.6,12.6,0,0,1,12.54,12.53v85.55H188.91Z"
+            />
+            <path
+              d="M301.37,127.71H288.46c-7.37,0-12.54-5.17-12.54-12.54V65c0-5.89-1.75-10.23-5.34-12.9a19.63,19.63,0,0,0-12-4.06,18.7,18.7,0,0,0-11.79,4.06c-3.41,2.67-5.17,7-5.17,12.9v62.69H215.82V70.19c0-16.69,4.34-27.93,13.09-33.56a57.22,57.22,0,0,1,29-9.21,55.82,55.82,0,0,1,29.86,8.48c9.13,5.62,13.65,17.05,13.65,34.29Z"
+            />
+            <path
+              d="M370.31.5h12.54a11.89,11.89,0,0,1,8.85,3.87A12.09,12.09,0,0,1,395.39,13v71.9c0,17.42-5.08,29.22-15.12,35.39a61.52,61.52,0,0,1-32.82,9.22,57.44,57.44,0,0,1-18.8-3.13,30.84,30.84,0,0,1-14.75-10.14c-7.1-9.13-10.69-21.48-10.69-37.24,0-15.49,3.59-27.93,10.69-37.24,7.37-9.59,16.87-14.38,28.39-14.38a33.93,33.93,0,0,1,16.22,3.68,35,35,0,0,1,11.8,11.43Zm-36.5,99.92c3.69,5.16,8.94,7.74,15.85,7.74q10,0,15.49-7.74c3.41-5.16,5.16-12.63,5.16-22.49q0-13.28-5.53-21a19.38,19.38,0,0,0-15.85-7.37,17.64,17.64,0,0,0-15.12,7.74c-3.69,4.89-5.53,11.8-5.53,20.65C328.28,87.79,330.12,95.26,333.81,100.42Z"
+            />
+            <path
+              d="M486.45,97.47c-2.67,10.33-7.83,18.16-15.48,23.6-7.65,5.62-17.24,8.48-28.76,8.48-14,0-25-4.52-32.82-13.64-7.83-8.85-11.79-21.48-11.79-38,0-15.76,3.77-28,11.42-36.87,7.84-9.13,18.81-13.64,32.82-13.64q22.13,0,34.29,13.27c7.84,9.13,11.8,21.75,11.8,38v4a5.77,5.77,0,0,1-.37,2.58H423.77c.28,7.65,2.12,13.28,5.53,17,3.23,4,8,5.9,14.38,5.9a20.69,20.69,0,0,0,10.7-2.58c1.47-.46,2.58-1.84,4.05-3.32a8.5,8.5,0,0,1,2.77-3A11.19,11.19,0,0,1,468,97.47ZM461.38,68.71c-.46-6.63-2.21-11.52-5.16-14.75-3.23-3.41-7.74-5.16-13.64-5.16A18,18,0,0,0,429.3,54c-3.41,3.41-5.25,8.39-5.53,14.75Z"
+            />
+          </g>
+          </svg></span>
+          <p id="dev">FULLSTACK DEVELOPER</p>
           <button>Contact me!</button>
+        </div>
       </div>
     </div>
 
     <div class="col-12 col-lg-6">
-      <div>
-        <object id="svg1" type="image/svg+xml" width="500px"></object>
+      <div class="logo-anim">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 345 345" height="400">
+          <g id="cycle" data-name="Layer 1">
+            <path
+              class="c-1"
+              d="M338.55,199.41C330.94,149.21,275,57.22,237,23.54c-16.55-14.66-42.73-13.48-66.25-13.48s-49.69-1.18-66.24,13.48C66.54,57.22,10.6,149.21,3,199.41-4.51,249,31.15,302.87,76.09,319.06c44.54,16.05,144.11,13.89,189.37,0C311.12,305.05,346.06,249,338.55,199.41Z"
+            />
+            <path
+              class="c-2"
+              d="M257.77,11.69c-49-13.26-155.74.85-201.86,22.05-20.1,9.24-29.56,33.67-39,55.19S-4.24,133.93,2.51,155c15.51,48.34,77.16,136.61,120,163.8,42.32,26.84,106,15.93,139-18.67,32.64-34.29,70.8-126.29,76.33-173.31C343.4,79.37,306.14,24.79,257.77,11.69Z"
+            />
+            <path
+              class="c-3"
+              d="M28.84,67.71c-19.41,46.91-19,154.57-3.88,203,6.6,21.11,29.63,33.61,49.76,45.76s41.94,26.68,63.69,22.66C188.34,330,283.74,280.06,316.18,241c32-38.54,29.33-103.13-.79-140.21C285.54,64.05,199.15,14.47,153.22,3,106.88-8.59,48,21.41,28.84,67.71Z"
+            />
+            <path
+              class="a-shadow"
+              d="M296.19,267H236.66L171,85.23q-.56-2.79-4.27-2.79c-2.59,0-4.33.93-5.19,2.79L97.2,267H36.92Q44,244.72,59,200q16.87-49.62,33-94.72Q109.81,56,113.89,50.06q7.6-9.93,21.79-15.15a93.48,93.48,0,0,1,61.66,0q14.28,5.22,21.52,15.15,4.63,5.74,22.25,55,12.42,34.65,32.64,94.72Q284.88,233.4,296.19,267Z"
+            />
+            <path
+              class="a-out"
+              d="M304.46,277.37H244.93L179.28,95.59c-.37-1.86-1.8-2.79-4.27-2.79s-4.33.93-5.19,2.79L105.47,277.37H45.19q7.05-22.29,22.07-67,16.88-49.62,33-94.72,17.81-49.27,21.89-55.19,7.59-9.93,21.79-15.15a93.48,93.48,0,0,1,61.66,0q14.28,5.22,21.52,15.15,4.63,5.74,22.25,55Q261.8,150.09,282,210.16,293.15,243.76,304.46,277.37Z"
+            />
+          </g>
+      </svg>
       </div>
     </div>
   </div>

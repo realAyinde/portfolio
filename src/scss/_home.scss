@@ -1,13 +1,136 @@
-// .home {
-//   .h1::before {
-//     content: "\003Ch1\003E\00000a"; //\f105\0009
-//     white-space: pre-line;
-//     font-family: acme;
-//     font-weight: lighter;
-//     font-style: italic;
-//     margin-left: -10px;
-//     font-size: $tag-size;
-//     line-height: 0%;
-//     color: rgba($color: #ffffff, $alpha: 0.3);
-//   }
-// }
+.home {
+  p {
+    font-family: acme;
+    font-weight: lighter;
+    font-size: smaller;
+    letter-spacing: 0.2em;
+    margin-bottom: 1em;
+    // color: $button-color;
+  }
+
+  #dev {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+}
+
+// Ayinde animation
+#ayinde {
+  fill: none;
+  stroke: $button-color;
+  stroke-miterlimit: 10;
+  animation: fill 0.5s linear 3s forwards;
+
+  path:hover {
+    fill: transparent;
+  }
+}
+
+#ayinde path:nth-child(1) {
+  stroke-dasharray: 520;
+  stroke-dashoffset: 520;
+  animation: animate-path 2s linear forwards;
+}
+
+#ayinde path:nth-child(2) {
+  stroke-dasharray: 525;
+  stroke-dashoffset: 525;
+  animation: animate-path 2s linear 0.3s forwards;
+}
+
+#ayinde path:nth-child(3) {
+  stroke-dasharray: 329.14;
+  stroke-dashoffset: 329.14;
+  animation: animate-path 2s linear 0.6s forwards;
+}
+
+#ayinde path:nth-child(4) {
+  stroke-dasharray: 479.5;
+  stroke-dashoffset: 479.5;
+  animation: animate-path 2s linear 0.9s forwards;
+}
+
+#ayinde path:nth-child(5) {
+  stroke-dasharray: 567;
+  stroke-dashoffset: 567;
+  animation: animate-path 2s linear 1.2s forwards;
+}
+
+#ayinde path:nth-child(6) {
+  stroke-dasharray: 542;
+  stroke-dashoffset: 542;
+  animation: animate-path 2s linear 1.5s forwards;
+}
+
+@keyframes animate-path {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: $button-color;
+  }
+}
+
+// cycle
+#cycle {
+  .c-1 {
+    fill: rgba(255, 140, 0, 0.5);
+    transform-origin: center;
+    animation: rotate 2s linear forwards infinite;
+  }
+
+  .c-2 {
+    fill: rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    animation: rotate 2s linear forwards infinite;
+    animation-direction: reverse;
+  }
+
+  .c-3 {
+    fill: rgba(125, 70, 0, 0.5);
+    transform-origin: center;
+    animation: rotate-c3 5s linear forwards infinite;
+  }
+
+  .a-out {
+    fill: #f7931e;
+  }
+
+  .a-shadow {
+    fill: #4d4d4d;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  @keyframes rotate-c3 {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    50% {
+      transform: rotateZ(360deg);
+    }
+    100% {
+      transform: rotateZ(-180deg);
+    }
+  }
+}
+
+
+.logo-anim {
+  text-align: center;
+  vertical-align: middle;
+}
