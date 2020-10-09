@@ -9,6 +9,7 @@ $button-color: rgb(255, 140, 0);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
 }
 
 @font-face {
@@ -43,9 +44,10 @@ $button-color: rgb(255, 140, 0);
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: $body-bg-color;
+  font-size: 2rem;
   color: #fff;
   line-height: 1.5;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 ul {
@@ -58,22 +60,20 @@ ul {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-  height: 100vh;
+  height: 100%;
 }
 
 button {
   display: inline-block;
   border-radius: 4px;
   border: none;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 0.8rem;
   margin: 0;
   text-decoration: none;
   color: $button-color;
   background: transparent;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.3em;
   text-align: center;
@@ -87,8 +87,12 @@ button:hover {
 
 // logo
 .logo-box {
-  width: 50;
-  height: 50;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
   text-align: center;
 
 }
@@ -96,10 +100,6 @@ button:hover {
 #logo {
   line-height: 50px;
   vertical-align: middle;
-  fill: white;
-  stroke:white;
-  stroke-miterlimit: 10;
-  /* animation: fill 0.5s linear 1s forwards; */
 }
 
 @import 'grid';

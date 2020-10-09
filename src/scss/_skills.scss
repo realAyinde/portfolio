@@ -1,7 +1,6 @@
 .skills-2 {
   margin: 0.5em;
   font-family: josefinSans;
-  font-size: 18px;
 
   .card {
     margin-bottom: 1em;
@@ -11,10 +10,13 @@
 
     .ruler {
       width: 100%;
-      // height: 0;
       border: 2px solid $button-color;
       margin-top: 0.2em;
       margin-bottom: 0.5em;
+    }
+
+    h3 {
+      font-size: 1.3rem;
     }
 
     ul {
@@ -25,6 +27,7 @@
     }
 
     li {
+      font-size: 1.2rem;
       word-wrap: break-word;
       flex: 30%;
       padding: 4px;

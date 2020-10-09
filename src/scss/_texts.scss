@@ -1,9 +1,6 @@
-$tag-size: 24px;
+$tag-size: 1.5rem;
 
 .h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  font-weight: bold;
   margin-left: 16px;
 }
 
@@ -12,10 +9,8 @@ $tag-size: 24px;
   white-space: pre-line;
   margin-left: -16px;
   font-family: acme;
-  font-weight: lighter;
   font-style: italic;
   font-size: $tag-size;
-  line-height: 0%;
   color: rgba($color: #ffffff, $alpha: 0.3);
 }
 
@@ -24,33 +19,31 @@ $tag-size: 24px;
   margin-left: -16px;
   display: block;
   font-family: acme;
-  font-weight: lighter;
   font-style: italic;
   font-size: $tag-size;
   color: rgba($color: #ffffff, $alpha: 0.3);
 }
 
 .texts {
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: 1.4rem;
+  padding-left: 1.4rem;
   font-family: josefinSans;
-  font-size: 20px;
+  font-size: 1.2rem;
 
   p {
+    font-size: 1.2rem;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
   }
 }
 
 .body {
-  margin: 8px;
   min-height: 100%;
 }
 
 .body::before {
   content: "\003C body\003E";
   font-family: acme;
-  font-weight: lighter;
   font-style: italic;
   font-size: $tag-size;
   color: rgba($color: #ffffff, $alpha: 0.3);
@@ -60,7 +53,6 @@ $tag-size: 24px;
   content: "\003C\2215 body\003E";
   display: block;
   font-family: acme;
-  font-weight: lighter;
   font-style: italic;
   font-size: $tag-size;
   color: rgba($color: #ffffff, $alpha: 0.3);
@@ -104,31 +96,26 @@ form {
   color: $button-color;
 }
 
-.home {
-  h1 {
-    font-size: 50px;
-  }
-}
-
-// .display-pic {
-//   padding: auto;
-//   margin: auto;
-// }
-
 img.my-pic {
   display: block;
   margin: auto;
   width: 90%;
 }
 
+.display-pic {
+  display: block;
+  position: relative;
+}
+
 .pic-texts {
   padding-top: 0.5em;
   text-align: center;
   font-family: josefinSans;
-  // text-shadow: 1px 1px grey;
   .name {
     font-size: 20px;
     font-weight: bold;
+    line-height: 100%;
+    vertical-align: middle;
   }
   .title {
     font-size: 14px;

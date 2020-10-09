@@ -2,15 +2,13 @@
   p {
     font-family: acme;
     font-weight: lighter;
-    font-size: smaller;
+    font-size: 1.5rem;
     letter-spacing: 0.2em;
     margin-bottom: 1em;
-    // color: $button-color;
   }
 
   #dev {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
     letter-spacing: 0.1em;
   }
 }
@@ -87,14 +85,14 @@
   }
 
   .c-2 {
-    fill: rgba(0, 0, 0, 0.5);
+    fill: rgba(255, 255, 255, 0.2);
     transform-origin: center;
     animation: rotate 2s linear forwards infinite;
     animation-direction: reverse;
   }
 
   .c-3 {
-    fill: rgba(125, 70, 0, 0.5);
+    fill: rgba(75, 44, 0, 0.5);
     transform-origin: center;
     animation: rotate-c3 5s linear forwards infinite;
   }
