@@ -2,7 +2,7 @@ const about = `
   <div class="row">
           <div class="col-12 col-lg-6">
             <div class="about">
-              <p class="h1">About me</p>
+              <h1 class="h1">About me</h1>
               <div class="texts">
                 <p>
                   Enthusiastically connected with the web development industry and

@@ -3,11 +3,9 @@ const skills = `
   <div class="col-12 col-lg-6">
     <div class="skills">
       <h1 aria-label="Skills &amp; Experience" class="h1">
-        <span class="blast" aria-hidden="true" style="opacity: 1">Skills</span>
-        <span class="blast" aria-hidden="true" style="opacity: 1">&amp;</span>
-        <span class="blast" aria-hidden="true" style="opacity: 1"
-          >Experience</span
-        >
+        Skills
+        &amp;
+        Experience
       </h1>
 
       <div class="texts">

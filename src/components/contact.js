@@ -2,7 +2,7 @@ const contact = `
   <div class="row">
           <div class="col-12 col-lg-6">
             <div class="contact">
-              <p class="h1">Contact me</p>
+              <h1 class="h1">Contact me</h1>
               <p class="texts">
                 I am interested in freelance opportunities – especially ambitious or large
                 projects. However, if you have other request or question, don’t hesitate to
